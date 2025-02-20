@@ -1,0 +1,42 @@
+/* Base card style */
+.task-card {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  margin: 1rem;
+}
+
+/* Style for completed tasks */
+.task-card.completed {
+  background-color: #96c58b;
+}
+
+/* Style for incomplete tasks */
+.task-card.incomplete {
+  background-color: #cbc1a5;
+}
+
+/* Hover effects for card */
+.task-card:hover {
+  transform: scale(1.009); /* Slightly enlarges the task */
+}
+
+/* Hover effect color change for completed/incomplete tasks */
+.task-card.completed:hover {
+  background-color: #b9c4c5;
+}
+
+.task-card.incomplete:hover {
+  background-color: #bcbdb9;
+}
+
+.task-joke {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+}

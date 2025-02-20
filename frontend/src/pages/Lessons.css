@@ -1,0 +1,36 @@
+/* Styles for the Lessons container */
+.lessons-container {
+  padding: 1rem;
+}
+
+/* Styles for the grid that holds the lesson cards */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .lessons-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 columns on medium screens and above */
+  }
+}
+
+/* Card hover effect */
+.lesson-card {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.lesson-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the lesson title */
+.lesson-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}

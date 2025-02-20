@@ -1,0 +1,185 @@
+/* General styles */
+html,
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: white;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  background-attachment: fixed; /* Keeps the gradient fixed during scroll */
+}
+
+body {
+  flex-grow: 1; /* Ensures body fills the remaining space */
+}
+
+/* Container for center alignment of content */
+.container {
+  max-width: 50%;
+  background: linear-gradient(to right, #184153, #10232a);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background: radial-gradient(circle, #2b5569 10%, #2b5569 90%);
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-weight: bold;
+  width: 70%;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  background: radial-gradient(circle, #389f02 10%, #42b903 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  font-weight: bold;
+
+  /* 3D Effect */
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    6px 6px 10px rgba(0, 0, 0, 0.35),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button active effect (pressed down) */
+button:active {
+  transform: translateY(2px);
+  box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+/* Mobile adjustments for button */
+@media (max-width: 768px) {
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* Mobile adjustments for general layout */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+}
+
+/* Styling for input containers */
+.input-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Label styling */
+.input-container label {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Input field styling */
+.input-container input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  outline: none;
+}
+
+/* Focused input styles */
+.input-container input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Floating label effect when input is focused or has value */
+.input-container input:focus ~ label,
+.input-container input:not(:focus):valid ~ label {
+  font-size: 12px;
+  color: var(--primary-color);
+  margin-top: -10px;
+}
+
+/* Styling for error messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Styling for the popup messages */
+.popup {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+}

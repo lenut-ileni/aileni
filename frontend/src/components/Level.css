@@ -1,0 +1,21 @@
+.level-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  background-color: #2b3e50;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  margin-top: 5rem;
+  z-index: 1000;
+}
+
+.level-info {
+  margin-top: 10px;
+}
+
+.level-container.scrolled {
+  opacity: 0.8;
+}

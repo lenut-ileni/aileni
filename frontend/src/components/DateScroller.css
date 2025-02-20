@@ -1,0 +1,43 @@
+.date-scroller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.arrow-button {
+  background-color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #ddd;
+}
+
+.dates-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.date-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.date-item:hover {
+  background-color: #666666;
+}
+
+.selected {
+  background-color: #3e8e41;
+  color: white;
+}

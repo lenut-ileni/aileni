@@ -1,0 +1,77 @@
+/* Container for the form */
+.subject-form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #2b3e50;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form styling */
+.subject-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input field */
+.subject-input {
+  width: auto;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: white;
+  color: #333;
+  margin: 12px;
+}
+
+/* Placeholder text */
+.subject-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Input focus effect */
+.subject-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Button styling */
+.subject-submit-btn {
+  background: #3e8e41;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.subject-submit-btn:hover {
+  background: #2d6e30;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .subject-form-container {
+    padding: 15px;
+  }
+
+  .subject-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .subject-submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

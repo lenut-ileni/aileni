@@ -1,0 +1,32 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #184153, #10232a);
+  text-align: center;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.3),
+    -4px -4px 10px rgba(255, 255, 255, 0.2),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+/* When scrolled, add slight transparency */
+.header.scrolled {
+  opacity: 0.8;
+}
+
+/* Style for the navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Style for each navigation item */
+.nav-item {
+  list-style: none;
+}

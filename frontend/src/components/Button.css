@@ -1,0 +1,56 @@
+/* Base Button */
+.custom-button {
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  font-weight: bold;
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Green Button */
+.custom-button.green {
+  background: radial-gradient(circle, #389f02 10%, #42b903 100%);
+}
+
+/* Red Button */
+.custom-button.red {
+  background: radial-gradient(circle, #b50000a3 10%, #ff000096 100%);
+}
+
+/* Yellow Button */
+.custom-button.yellow {
+  background: radial-gradient(circle, #b1a106 10%, #c19f00 100%);
+}
+
+/* Neutral Button */
+.custom-button.neutral {
+  background: radial-gradient(circle, #b0b0b0 10%, #8f8f8f 100%);
+}
+
+/* Hover Effect */
+.custom-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    6px 6px 10px rgba(0, 0, 0, 0.35),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Active (Pressed) Effect */
+.custom-button:active {
+  transform: translateY(2px);
+  box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.4);
+}

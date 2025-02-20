@@ -1,0 +1,39 @@
+/* Loading Text Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Loading Text Styling */
+.loading-text {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+/* Keyframes for fade-in and fade-out effect */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.loading-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.loading-container .clip-loader {
+  margin-bottom: 15px;
+}
